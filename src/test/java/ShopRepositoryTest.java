@@ -1,8 +1,9 @@
-package ru.netology;
-
-import org.junit.Assert;
-import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import ru.netology.AlreadyExistsException;
+import ru.netology.NotFoundException;
+import ru.netology.Product;
+import ru.netology.ShopRepository;
 
 public class ShopRepositoryTest {
 
@@ -22,7 +23,7 @@ public class ShopRepositoryTest {
         Product[] expected = {product1, product3};
         Product[] actual = repo.findAll();
 
-        Assert.assertArrayEquals(expected, actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
