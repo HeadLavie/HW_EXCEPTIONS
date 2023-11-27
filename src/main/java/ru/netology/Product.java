@@ -55,3 +55,5 @@ public class Product {
         }
     }
 }
+
+// self-comment
